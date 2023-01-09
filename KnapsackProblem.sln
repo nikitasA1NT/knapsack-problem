@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRunner", "TestRunner\TestRunner.csproj", "{12884820-B30D-4E52-8EE3-BB9BC9B73E02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnapsackLib", "KnapsackLib\KnapsackLib.csproj", "{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{12884820-B30D-4E52-8EE3-BB9BC9B73E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12884820-B30D-4E52-8EE3-BB9BC9B73E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12884820-B30D-4E52-8EE3-BB9BC9B73E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
