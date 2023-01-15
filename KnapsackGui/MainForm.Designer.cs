@@ -37,9 +37,15 @@
             this.addItemButton = new System.Windows.Forms.Button();
             this.allItemsDataGridView = new System.Windows.Forms.DataGridView();
             this.allItemsLabel = new System.Windows.Forms.Label();
+            this.resultDataGridView = new System.Windows.Forms.DataGridView();
+            this.resultLabel = new System.Windows.Forms.Label();
+            this.knapsackCapacityNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.knapsackCapacityLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.itemValueNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemWeightNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allItemsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.knapsackCapacityNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // itemNameLabel
@@ -153,11 +159,68 @@
             this.allItemsLabel.TabIndex = 8;
             this.allItemsLabel.Text = "All items:";
             // 
+            // resultDataGridView
+            // 
+            this.resultDataGridView.AllowUserToAddRows = false;
+            this.resultDataGridView.AllowUserToDeleteRows = false;
+            this.resultDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.resultDataGridView.Location = new System.Drawing.Point(546, 115);
+            this.resultDataGridView.Name = "resultDataGridView";
+            this.resultDataGridView.ReadOnly = true;
+            this.resultDataGridView.RowTemplate.Height = 25;
+            this.resultDataGridView.Size = new System.Drawing.Size(402, 428);
+            this.resultDataGridView.TabIndex = 9;
+            // 
+            // resultLabel
+            // 
+            this.resultLabel.AutoSize = true;
+            this.resultLabel.Location = new System.Drawing.Point(546, 97);
+            this.resultLabel.Name = "resultLabel";
+            this.resultLabel.Size = new System.Drawing.Size(140, 15);
+            this.resultLabel.TabIndex = 10;
+            this.resultLabel.Text = "Knapsack problem result:";
+            // 
+            // knapsackCapacityNumericUpDown
+            // 
+            this.knapsackCapacityNumericUpDown.Location = new System.Drawing.Point(420, 190);
+            this.knapsackCapacityNumericUpDown.Maximum = new decimal(new int[] {
+            2147483647,
+            0,
+            0,
+            0});
+            this.knapsackCapacityNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.knapsackCapacityNumericUpDown.Name = "knapsackCapacityNumericUpDown";
+            this.knapsackCapacityNumericUpDown.Size = new System.Drawing.Size(120, 23);
+            this.knapsackCapacityNumericUpDown.TabIndex = 11;
+            this.knapsackCapacityNumericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.knapsackCapacityNumericUpDown.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.knapsackCapacityNumericUpDown_KeyPress);
+            // 
+            // knapsackCapacityLabel
+            // 
+            this.knapsackCapacityLabel.AutoSize = true;
+            this.knapsackCapacityLabel.Location = new System.Drawing.Point(420, 172);
+            this.knapsackCapacityLabel.Name = "knapsackCapacityLabel";
+            this.knapsackCapacityLabel.Size = new System.Drawing.Size(107, 15);
+            this.knapsackCapacityLabel.TabIndex = 12;
+            this.knapsackCapacityLabel.Text = "Knapsack capacity:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1037, 555);
+            this.Controls.Add(this.knapsackCapacityLabel);
+            this.Controls.Add(this.knapsackCapacityNumericUpDown);
+            this.Controls.Add(this.resultLabel);
+            this.Controls.Add(this.resultDataGridView);
             this.Controls.Add(this.allItemsLabel);
             this.Controls.Add(this.allItemsDataGridView);
             this.Controls.Add(this.addItemButton);
@@ -174,6 +237,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemValueNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemWeightNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allItemsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.knapsackCapacityNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,5 +255,9 @@
         private Button addItemButton;
         private DataGridView allItemsDataGridView;
         private Label allItemsLabel;
+        private DataGridView resultDataGridView;
+        private Label resultLabel;
+        private NumericUpDown knapsackCapacityNumericUpDown;
+        private Label knapsackCapacityLabel;
     }
 }
