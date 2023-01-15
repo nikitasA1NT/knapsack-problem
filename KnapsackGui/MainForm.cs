@@ -1,14 +1,16 @@
 using KnapsackLib;
+using System.ComponentModel;
 
 namespace KnapsackGui
 {
     public partial class MainForm : Form
     {
-        private readonly List<KnapsackProblem.Item> _itemList = new List<KnapsackProblem.Item>();
+        private readonly BindingList<KnapsackProblem.Item> _itemList = new BindingList<KnapsackProblem.Item>();
 
-    public MainForm()
+        public MainForm()
         {
             InitializeComponent();
+            allItemsDataGridView.DataSource = _itemList;
         }
 
         private void itemValueNumericUpDown_KeyPress(object sender, KeyPressEventArgs e)
