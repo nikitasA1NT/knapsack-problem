@@ -1,8 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRunner", "TestRunner\TestRunner.csproj", "{12884820-B30D-4E52-8EE3-BB9BC9B73E02}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestRunner", "TestRunner\TestRunner.csproj", "{12884820-B30D-4E52-8EE3-BB9BC9B73E02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnapsackLib", "KnapsackLib\KnapsackLib.csproj", "{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnapsackLib", "KnapsackLib\KnapsackLib.csproj", "{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnapsackGui", "KnapsackGui\KnapsackGui.csproj", "{4ADE4ABB-1693-46F6-B21A-E1AC4B427903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +23,15 @@ Global
 		{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44AA8B65-62EF-4DEC-85DF-58D3FB67F5C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ADE4ABB-1693-46F6-B21A-E1AC4B427903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADE4ABB-1693-46F6-B21A-E1AC4B427903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADE4ABB-1693-46F6-B21A-E1AC4B427903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADE4ABB-1693-46F6-B21A-E1AC4B427903}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45B65B9D-BD26-43DE-93BE-DECB454B9D8D}
 	EndGlobalSection
 EndGlobal
