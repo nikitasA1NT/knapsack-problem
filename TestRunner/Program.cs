@@ -1,6 +1,6 @@
 ﻿using KnapsackLib;
 
-var itemList = new List<Item>
+var itemList = new List<KnapsackProblem.Item>
 {
     new("Gold ingot", 100, 5),
     new("Piece of sausage in dough", 20, 2),

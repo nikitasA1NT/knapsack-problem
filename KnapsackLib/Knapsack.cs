@@ -1,9 +1,9 @@
 ﻿namespace KnapsackLib;
 
-public record Item(string Name, int Value, int Weight);
-
 public static class KnapsackProblem
 {
+    public record Item(string Name, int Value, int Weight);
+
     // Method solve knapsack problem
     public static List<Item> Solve(List<Item> items, int capacity)
     {
