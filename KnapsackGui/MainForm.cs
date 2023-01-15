@@ -69,5 +69,11 @@ namespace KnapsackGui
         {
             UpdateResult();
         }
+
+        private void clearAllItemsButton_Click(object sender, EventArgs e)
+        {
+            _itemList.Clear();
+            UpdateResult();
+        }
     }
 }

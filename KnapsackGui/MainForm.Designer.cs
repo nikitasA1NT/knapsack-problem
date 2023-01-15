@@ -41,6 +41,7 @@
             this.resultLabel = new System.Windows.Forms.Label();
             this.knapsackCapacityNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.knapsackCapacityLabel = new System.Windows.Forms.Label();
+            this.clearAllItemsButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.itemValueNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemWeightNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allItemsDataGridView)).BeginInit();
@@ -212,11 +213,22 @@
             this.knapsackCapacityLabel.TabIndex = 12;
             this.knapsackCapacityLabel.Text = "Knapsack capacity:";
             // 
+            // clearAllItemsButton
+            // 
+            this.clearAllItemsButton.Location = new System.Drawing.Point(420, 71);
+            this.clearAllItemsButton.Name = "clearAllItemsButton";
+            this.clearAllItemsButton.Size = new System.Drawing.Size(75, 23);
+            this.clearAllItemsButton.TabIndex = 13;
+            this.clearAllItemsButton.Text = "Clear items";
+            this.clearAllItemsButton.UseVisualStyleBackColor = true;
+            this.clearAllItemsButton.Click += new System.EventHandler(this.clearAllItemsButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1037, 555);
+            this.ClientSize = new System.Drawing.Size(960, 555);
+            this.Controls.Add(this.clearAllItemsButton);
             this.Controls.Add(this.knapsackCapacityLabel);
             this.Controls.Add(this.knapsackCapacityNumericUpDown);
             this.Controls.Add(this.resultLabel);
@@ -259,5 +271,6 @@
         private Label resultLabel;
         private NumericUpDown knapsackCapacityNumericUpDown;
         private Label knapsackCapacityLabel;
+        private Button clearAllItemsButton;
     }
 }
