@@ -5,8 +5,8 @@ namespace KnapsackGui
 {
     public partial class MainForm : Form
     {
-        private readonly BindingList<KnapsackProblem.Item> _itemList = new BindingList<KnapsackProblem.Item>();
-        private readonly BindingList<KnapsackProblem.Item> _resultList = new BindingList<KnapsackProblem.Item>();
+        private readonly BindingList<KnapsackProblem.Item> _itemList = new();
+        private readonly BindingList<KnapsackProblem.Item> _resultList = new();
 
         public MainForm()
         {
@@ -16,6 +16,8 @@ namespace KnapsackGui
 
             allItemsDataGridView.DataSource = _itemList;
             resultDataGridView.DataSource = _resultList;
+
+            UpdateResult();
         }
 
         private void itemValueNumericUpDown_KeyPress(object sender, KeyPressEventArgs e)
@@ -63,6 +65,7 @@ namespace KnapsackGui
             {
                 _resultList.Add(item);
             }
+            totalSumLabel.Text = $"Total sum: {solvedList.SummaryValue()}";
         }
 
         void knapsackCapacityNumericUpDown_TextChanged(object sender, EventArgs e)

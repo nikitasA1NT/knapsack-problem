@@ -42,6 +42,7 @@
             this.knapsackCapacityNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.knapsackCapacityLabel = new System.Windows.Forms.Label();
             this.clearAllItemsButton = new System.Windows.Forms.Button();
+            this.totalSumLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.itemValueNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemWeightNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allItemsDataGridView)).BeginInit();
@@ -148,7 +149,7 @@
             this.allItemsDataGridView.Name = "allItemsDataGridView";
             this.allItemsDataGridView.ReadOnly = true;
             this.allItemsDataGridView.RowTemplate.Height = 25;
-            this.allItemsDataGridView.Size = new System.Drawing.Size(402, 428);
+            this.allItemsDataGridView.Size = new System.Drawing.Size(402, 403);
             this.allItemsDataGridView.TabIndex = 7;
             // 
             // allItemsLabel
@@ -169,7 +170,7 @@
             this.resultDataGridView.Name = "resultDataGridView";
             this.resultDataGridView.ReadOnly = true;
             this.resultDataGridView.RowTemplate.Height = 25;
-            this.resultDataGridView.Size = new System.Drawing.Size(402, 428);
+            this.resultDataGridView.Size = new System.Drawing.Size(402, 403);
             this.resultDataGridView.TabIndex = 9;
             // 
             // resultLabel
@@ -223,11 +224,22 @@
             this.clearAllItemsButton.UseVisualStyleBackColor = true;
             this.clearAllItemsButton.Click += new System.EventHandler(this.clearAllItemsButton_Click);
             // 
+            // totalSumLabel
+            // 
+            this.totalSumLabel.AutoSize = true;
+            this.totalSumLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.totalSumLabel.Location = new System.Drawing.Point(546, 521);
+            this.totalSumLabel.Name = "totalSumLabel";
+            this.totalSumLabel.Size = new System.Drawing.Size(96, 25);
+            this.totalSumLabel.TabIndex = 14;
+            this.totalSumLabel.Text = "Total sum:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 555);
+            this.Controls.Add(this.totalSumLabel);
             this.Controls.Add(this.clearAllItemsButton);
             this.Controls.Add(this.knapsackCapacityLabel);
             this.Controls.Add(this.knapsackCapacityNumericUpDown);
@@ -272,5 +284,6 @@
         private NumericUpDown knapsackCapacityNumericUpDown;
         private Label knapsackCapacityLabel;
         private Button clearAllItemsButton;
+        private Label totalSumLabel;
     }
 }
